@@ -11,7 +11,8 @@
 // If that value has two digits, continue reducing in this way until a single-digit number is produced. 
 // This is only applicable to the natural numbers.
 
-
+// TRICK
+// Use recursivity
 
 
 // EXAMPLES

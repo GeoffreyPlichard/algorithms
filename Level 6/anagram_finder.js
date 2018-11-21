@@ -15,6 +15,8 @@
 
 // Return matches in the same order as in the dictionary. Return an empty array if there are no matches.
 
+// TRICK
+// Sort strings before evaluate !
 
 
 // MINE
