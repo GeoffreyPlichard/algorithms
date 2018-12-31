@@ -25,7 +25,8 @@
 
 /**
  * For each coin value (50, 20...) I test if the value to change (ex: 91) is bigger than the coin value
- * If true I increment the counter for this coin value and push the key : value object (ex with half-dollar 50: "H":1)
+ * If true I increment the counter for this coin value and remove the coin value from the value to change
+ * Then I push the key : value object (ex with half-dollar 50: "H":1)
  */
 function makeChange(numberToChange) {
   const coins = [50, 25, 10, 5, 1];
