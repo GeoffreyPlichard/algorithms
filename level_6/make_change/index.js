@@ -19,36 +19,39 @@
 // makeChange(91) --> {"H":1,"Q":1,"D":1,"N":1,"P":1}
 
 
-// MINE
 
-function makeChange(amount) {
-  let coins = [50, 25, 10, 5, 1];
+
+// My Solution
+
+/**
+ * For each coin value (50, 20...) I test if the value to change (ex: 91) is bigger than the coin value
+ * If true I increment the counter for this coin value and push the key : value object (ex with half-dollar 50: "H":1)
+ */
+function makeChange(numberToChange) {
+  const coins = [50, 25, 10, 5, 1];
   let change = {};
-  coins.map((value) => {
-    let nb = 0;
-    // On teste si le montant total est plus grand que la valeur de la pièce
-    // Si oui on incrémente le nombre de la pièce en cours
-    while(amount >= value) {
-      nb += 1;
-      amount -= value;
+  coins.map((coinValue) => {
+    let counter = 0;
+    while(numberToChange >= coinValue) {
+      counter += 1;
+      numberToChange -= coinValue;
     }
-    if(nb) {
-      // Pour chaque pièce on rajoute sa clé et la valeur, si il y en a
-      switch (value) {
+    if(counter) {
+      switch (coinValue) {
         case 50:
-          change["H"] = nb;
+          change["H"] = counter;
           break;
         case 25:
-          change["Q"] = nb;
+          change["Q"] = counter;
           break;
         case 10:
-          change["D"] = nb;
+          change["D"] = counter;
           break;
         case 5:
-          change["N"] = nb;
+          change["N"] = counter;
           break;
         case 1:
-          change["P"] = nb;
+          change["P"] = counter;
           break;
       }
     }
@@ -56,13 +59,6 @@ function makeChange(amount) {
   return change;
 }
 
-// BEST
-
-
-
-// CLEVER
-
-console.log(makeChange(91));
 
 module.exports = makeChange;
 
