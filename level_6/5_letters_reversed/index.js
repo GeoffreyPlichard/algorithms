@@ -30,14 +30,16 @@ function spinWords(text){
 
 // BEST
 
-function spinWords(words){
-  return words.split(' ').map(function (word) {
-    return (word.length > 4) ? word.split('').reverse().join('') : word;
-  }).join(' ');
-}
+// function spinWords(words){
+//   return words.split(' ').map(function (word) {
+//     return (word.length > 4) ? word.split('').reverse().join('') : word;
+//   }).join(' ');
+// }
 
 // CLEVER
 
-function spinWords(string){
-  return string.replace(/\w{5,}/g, function(w) { return w.split('').reverse().join('') })
-}
+// function spinWords(string){
+//   return string.replace(/\w{5,}/g, function(w) { return w.split('').reverse().join('') })
+// }
+
+module.exports = spinWords;
