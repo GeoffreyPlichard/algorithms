@@ -43,12 +43,14 @@ function countSmileys(arr) {
 
 // BEST
 
-function countSmileys(arr) {
-  return arr.filter(x => /^[:;][-~]?[)D]$/.test(x)).length;
-}
+// function countSmileys(arr) {
+//   return arr.filter(x => /^[:;][-~]?[)D]$/.test(x)).length;
+// }
 
 // CLEVER
 
-function countSmileys(arr) {
-  return arr.filter(x => /^[:;][-~]?[)D]$/.test(x)).length;
-}
+// function countSmileys(arr) {
+//   return arr.filter(x => /^[:;][-~]?[)D]$/.test(x)).length;
+// }
+
+module.exports = countSmileys;
