@@ -37,16 +37,18 @@ function narcissistic(n) {
 
 // BEST
 
-function narcissistic( value ) {
-  return ('' + value).split('').reduce(function(p, c){
-    return p + Math.pow(c, ('' + value).length)
-    }, 0) == value;
-}
+// function narcissistic( value ) {
+//   return ('' + value).split('').reduce(function(p, c){
+//     return p + Math.pow(c, ('' + value).length)
+//     }, 0) == value;
+// }
 
 // CLEVER
 
-function narcissistic( value ) {
-  return ('' + value).split('').reduce(function(p, c){
-    return p + Math.pow(c, ('' + value).length)
-    }, 0) == value;
-}
+// function narcissistic( value ) {
+//   return ('' + value).split('').reduce(function(p, c){
+//     return p + Math.pow(c, ('' + value).length)
+//     }, 0) == value;
+// }
+
+module.exports = narcissistic;
