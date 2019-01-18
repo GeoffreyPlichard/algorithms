@@ -43,25 +43,25 @@ function persistence(num){
   
   // BEST
   
-  function persistence(num) {
-    var times = 0;
+//   function persistence(num) {
+//     var times = 0;
     
-    num = num.toString();
+//     num = num.toString();
     
-    while (num.length > 1) {
-        times++;
-        num = num.split('').map(Number).reduce((a, b) => a * b).toString();
-    }
+//     while (num.length > 1) {
+//         times++;
+//         num = num.split('').map(Number).reduce((a, b) => a * b).toString();
+//     }
     
-    return times;
-  }
+//     return times;
+//   }
   
   // CLEVER
   
-  const persistence = num => {
-    return `${num}`.length > 1 
-        ? 1 + persistence(`${num}`.split('').reduce((a, b) => a * +b)) 
-        : 0;
-  }
+//   const persistence = num => {
+//     return `${num}`.length > 1 
+//         ? 1 + persistence(`${num}`.split('').reduce((a, b) => a * +b)) 
+//         : 0;
+//   }
   
-  
+  module.exports = persistence;
