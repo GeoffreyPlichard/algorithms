@@ -32,17 +32,18 @@ function wave(word){
 
 // BEST
 
-function wave(str){
-  let result = [];
-  str.split("").forEach((char, index) => {
-      if (/[a-z]/.test(char)) {
-          result.push(str.slice(0, index) + char.toUpperCase() + str.slice(index + 1));
-      }
-  });
-  return result;
-}
+// function wave(str){
+//   let result = [];
+//   str.split("").forEach((char, index) => {
+//       if (/[a-z]/.test(char)) {
+//           result.push(str.slice(0, index) + char.toUpperCase() + str.slice(index + 1));
+//       }
+//   });
+//   return result;
+// }
 
 // CLEVER
 
-const wave = s => Array.from( s, (_,i) => /\s/.test(s[i]) ? null : s.slice(0,i) + s[i].toUpperCase() + s.slice(i+1) ).filter(Boolean) ;
+// const wave = s => Array.from( s, (_,i) => /\s/.test(s[i]) ? null : s.slice(0,i) + s[i].toUpperCase() + s.slice(i+1) ).filter(Boolean) ;
 
+module.exports = wave;
