@@ -32,18 +32,20 @@ function findOutlier(n){
 
 // BEST
 
-function findOutlier(int){
-    var even = int.filter(a=>a%2==0);
-    var odd = int.filter(a=>a%2!==0);
-    return even.length==1? even[0] : odd[0];
-}
+// function findOutlier(int){
+//     var even = int.filter(a=>a%2==0);
+//     var odd = int.filter(a=>a%2!==0);
+//     return even.length==1? even[0] : odd[0];
+// }
 // CLEVER
 
-function findOutlier(int){
-    var even = int.filter(a=>a%2==0);
-    var odd = int.filter(a=>a%2!==0);
-    return even.length==1? even[0] : odd[0];
-}
+// function findOutlier(int){
+//     var even = int.filter(a=>a%2==0);
+//     var odd = int.filter(a=>a%2!==0);
+//     return even.length==1? even[0] : odd[0];
+// }
 
 
-console.log(findOutlier([160, 3, 1719, 19, 11, 13, -21]));
+// console.log(findOutlier([160, 3, 1719, 19, 11, 13, -21]));
+
+module.exports = findOutlier;
