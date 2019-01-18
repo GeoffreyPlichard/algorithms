@@ -27,22 +27,8 @@ function grabscrab(anagram, dictionary) {
     });
 }
 
-// BEST
-
-function grabscrab(anagram, dictionary) {
-    return validWords = dictionary.filter((w) => {
-        return anagram.split('').sort().join('') === w.split('').sort().join('')
-    });
-}
-
-// CLEVER
-
-function grabscrab(anagram, dictionary) {
-    return validWords = dictionary.filter((w) => {
-        return anagram.split('').sort().join('') === w.split('').sort().join('')
-    });
-}
-
 
 
 console.log(grabscrab("trisf", ["first"]));
+
+module.exports = grabscrab;
