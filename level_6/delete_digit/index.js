@@ -40,10 +40,11 @@ function deleteDigit(n) {
 
 // CLEVER
 
-function deleteDigit(n) {
-  const s = String(n)
-  return Math.max(...Array.from(s, (_, i) => s.slice(0, i) + s.slice(i + 1)))
-}
+// function deleteDigit(n) {
+//   const s = String(n)
+//   return Math.max(...Array.from(s, (_, i) => s.slice(0, i) + s.slice(i + 1)))
+// }
 
 
-console.log(deleteDigit(152));
+// console.log(deleteDigit(152));
+module.exports = deleteDigit;
