@@ -59,12 +59,15 @@ function digital_root(n) {
 
 // BEST
 
-function digital_root(n) {
-  return (n - 1) % 9 + 1;
-}
+// function digital_root(n) {
+//   return (n - 1) % 9 + 1;
+// }
 
 // CLEVER
 
-function digital_root(n) {
-  return (n - 1) % 9 + 1;
-}
+// function digital_root(n) {
+//   return (n - 1) % 9 + 1;
+// }
+
+module.exports = digital_root;
+
