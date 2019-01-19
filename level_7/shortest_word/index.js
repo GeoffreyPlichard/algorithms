@@ -24,12 +24,14 @@ function findShort(s){
 
 // Best Practices
 
-function findShort(s){
-  return Math.min.apply(null, s.split(' ').map(w => w.length));
-}
+// function findShort(s){
+//   return Math.min.apply(null, s.split(' ').map(w => w.length));
+// }
 
 // Clever
 
-function findShort(s){
-  return Math.min.apply(null, s.split(' ').map(w => w.length));
-}
+// function findShort(s){
+//   return Math.min.apply(null, s.split(' ').map(w => w.length));
+// }
+
+module.exports = findShort;
