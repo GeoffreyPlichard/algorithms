@@ -1,35 +1,36 @@
 //////////////////
-// Shortest Word
+// Factorial
 //////////////////
 
 
-// Simple, given a string of words, return the length of the shortest word(s).
+// In mathematics, the factorial of a non-negative integer n, denoted by n!, is the product of all positive integers less than or equal to n. For example,
 
-// String will never be empty and you do not need to account for different data types.
+// 5! = 5 * 4 * 3 * 2 * 1 = 120.
+
+// The value of 0! is 1.
+
+// #Your task
+
+// You have to create the function factorial that receives n and returns n!. You have to use recursion.
 
 
 
 // My Solution
 
-function findShort(s){
-  var arr=s.split(" ")
-  var shortest=arr[0].length
-  for(var i=0 ; i<arr.length; i++){
-      if(arr[i].length < shortest){  
-        shortest=arr[i].length
-      }
-    }
-  return shortest
-}
+const factorial = n => {
+  if ( n === 0 ) {
+    return 1;
+  }
+  var total = n * factorial(n - 1);
+  return total;
+};
 
 // Best Practices
 
-function findShort(s){
-  return Math.min.apply(null, s.split(' ').map(w => w.length));
-}
+// const factorial = n => n > 1 ? n*factorial(n-1) : 1;
 
 // Clever
 
-function findShort(s){
-  return Math.min.apply(null, s.split(' ').map(w => w.length));
-}
+// const factorial = n => n > 1 ? n*factorial(n-1) : 1;
+
+module.exports = factorial;
