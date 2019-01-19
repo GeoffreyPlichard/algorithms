@@ -35,16 +35,18 @@ function order(words){
 
 // BEST
 
-function order(words){
-  return words.split(' ').sort(function(a, b){
-      return a.match(/\d/) - b.match(/\d/);
-   }).join(' ');
-}  
+// function order(words){
+//   return words.split(' ').sort(function(a, b){
+//       return a.match(/\d/) - b.match(/\d/);
+//    }).join(' ');
+// }  
 
 // CLEVER
 
-function order(words){
-  return words.split(' ').sort(function(a, b){
-      return a.match(/\d/) - b.match(/\d/);
-   }).join(' ');
-}  
+// function order(words){
+//   return words.split(' ').sort(function(a, b){
+//       return a.match(/\d/) - b.match(/\d/);
+//    }).join(' ');
+// }  
+
+module.exports = order;
