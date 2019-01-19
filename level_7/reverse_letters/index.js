@@ -21,10 +21,12 @@ function reverseLetter(str) {
 
 // Best Practices
 
-reverseLetter=(s)=>s.replace(/[^a-z]/gi,'').split('').reverse().join('');
+// reverseLetter=(s)=>s.replace(/[^a-z]/gi,'').split('').reverse().join('');
 
 // Clever
 
-function reverseLetter(str) {
-  return [...str].reduce((s, c) => /[A-Z]/i.test(c) ? c + s : s, "")
-}
+// function reverseLetter(str) {
+//   return [...str].reduce((s, c) => /[A-Z]/i.test(c) ? c + s : s, "")
+// }
+
+module.exports = reverseLetter;
