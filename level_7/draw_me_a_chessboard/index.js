@@ -65,12 +65,14 @@ function chessBoard(rows, columns) {
 
 // Best Practices
 
-function chessBoard(rows, columns) {
-  return Array.from({length: rows}, (_,i) => Array.from({length: columns}, (_,j) => 'OX'[(i+j)%2]));
-}
+// function chessBoard(rows, columns) {
+//   return Array.from({length: rows}, (_,i) => Array.from({length: columns}, (_,j) => 'OX'[(i+j)%2]));
+// }
 
 // Clever
 
-function chessBoard(rows, columns) {
-  return Array.from({length: rows}, (_,i) => Array.from({length: columns}, (_,j) => 'OX'[(i+j)%2]));
-}
+// function chessBoard(rows, columns) {
+//   return Array.from({length: rows}, (_,i) => Array.from({length: columns}, (_,j) => 'OX'[(i+j)%2]));
+// }
+
+module.exports = chessBoard;
